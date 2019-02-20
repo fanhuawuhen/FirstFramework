@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		34195E71221D822900ADDB5A /* FirstFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 34195E6F221D822900ADDB5A /* FirstFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34195E7B221D85D200ADDB5A /* FirstClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34195E7A221D85D200ADDB5A /* FirstClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		34195E6C221D822900ADDB5A /* FirstFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FirstFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		34195E6F221D822900ADDB5A /* FirstFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstFramework.h; sourceTree = "<group>"; };
 		34195E70221D822900ADDB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34195E79221D852B00ADDB5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		34195E7A221D85D200ADDB5A /* FirstClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 		34195E62221D822900ADDB5A = {
 			isa = PBXGroup;
 			children = (
+				34195E79221D852B00ADDB5A /* README.md */,
 				34195E6E221D822900ADDB5A /* FirstFramework */,
 				34195E6D221D822900ADDB5A /* Products */,
 			);
@@ -47,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				34195E6F221D822900ADDB5A /* FirstFramework.h */,
+				34195E7A221D85D200ADDB5A /* FirstClass.swift */,
 				34195E70221D822900ADDB5A /* Info.plist */,
 			);
 			path = FirstFramework;
@@ -95,6 +100,7 @@
 				TargetAttributes = {
 					34195E6B221D822900ADDB5A = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -130,6 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34195E7B221D85D200ADDB5A /* FirstClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +268,7 @@
 		34195E75221D822900ADDB5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +278,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FirstFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +287,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.boringkiller.FirstFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +296,7 @@
 		34195E76221D822900ADDB5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +306,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FirstFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
