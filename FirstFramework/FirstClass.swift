@@ -8,8 +8,8 @@
 
 import Foundation
 
-public class FirstClass {
-    public static func printHelloWorld() {
+public class FirstClass: NSObject {
+    @objc public static func printHelloWorld() {
         print("Hello World")
     }
     static func notReveaFunc() {
